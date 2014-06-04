@@ -12,7 +12,7 @@ Hence the mess.
 ### Dependencies
 
 * depends on `cor3.core` and `cor3.forms`, by way of files that are included into this common library.
-* A custom version of NAudio is used here, until I adequately resolve differences between the assembly I'm using and the original(s).  The primary reason I'm using a customized binary here is due to the lack of a signed assembly as distributed by naudio's default nuget package.
+* A custom version of NAudio ([naudio.codeplex.com](http://naudio.codeplex.com)) is used here, until I adequately resolve differences between the assembly I'm using and the original(s).  The primary reason I'm using a customized binary here is due to the lack of a signed assembly as distributed by naudio's default nuget package.
 
 ### History
 

@@ -10,3 +10,6 @@
 [submodule "Source/gen.snd.vst"]
 	path = Source/gen.snd.vst
 	url = https://github.com/tfwio/gen.snd.vst
+[submodule "Source/gen.snd.vstsmfui"]
+	path = Source/gen.snd.vstsmfui
+	url = https://github.com/tfwio/gen.snd.vstsmfui

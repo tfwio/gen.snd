@@ -15,7 +15,7 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
-    <SignAssembly>True</SignAssembly>
+    <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>gen.snd.common.snk</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>
     <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
@@ -182,39 +182,65 @@
     </Compile>
     <Compile Include="Formats\ImpulseTrackerInstrument.cs" />
     <Compile Include="Formats\SoundFont2.cs" />
-    <Compile Include="Forms\BpmCalculatorForm.cs" />
+    <Compile Include="Forms\BpmCalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\BpmCalculatorForm.Designer.cs">
       <DependentUpon>BpmCalculatorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DirectSoundDevice.cs" />
-    <Compile Include="Forms\FrequencyTestControl.cs" />
+    <Compile Include="Forms\DirectSoundDevice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FrequencyTestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\FrequencyTestControl.Designer.cs">
       <DependentUpon>FrequencyTestControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrequencyTestForm.cs" />
+    <Compile Include="Forms\FrequencyTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrequencyTestForm.Designer.cs">
       <DependentUpon>FrequencyTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\IKnobSetting.cs" />
-    <Compile Include="Forms\ImpulseTrackerInstrumentDemoForm.cs" />
+    <Compile Include="Forms\ImpulseTrackerInstrumentDemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\ItiRenderer.cs" />
-    <Compile Include="Forms\Knob.cs" />
-    <Compile Include="Forms\KnobImageTool.cs" />
-    <Compile Include="Forms\KnobTwo.cs" />
+    <Compile Include="Forms\Knob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KnobImageTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KnobTwo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\KnobType.cs" />
     <Compile Include="Forms\ListHelper.cs" />
-    <Compile Include="Forms\Midi.DeviceSelector.cs" />
+    <Compile Include="Forms\Midi.DeviceSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\MidiFormListViewExtensions.cs" />
-    <Compile Include="Forms\MidiKeyFreqTestForm.cs" />
+    <Compile Include="Forms\MidiKeyFreqTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\MidiKeyFreqTestForm.Designer.cs">
       <DependentUpon>MidiKeyFreqTestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\VolumeSlider.cs" />
-    <Compile Include="Forms\WaveOutTestForm.cs" />
+    <Compile Include="Forms\VolumeSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WaveOutTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\WaveOutTestForm.Designer.cs">
       <DependentUpon>WaveOutTestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\WavePanel.cs" />
+    <Compile Include="Forms\WavePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\WavePanel.Designer.cs">
       <DependentUpon>WavePanel.cs</DependentUpon>
     </Compile>
@@ -336,26 +362,7 @@
     <Compile Include="System.Sound\MidiHelper.cs" />
     <Compile Include="Wave\Int32WaveChannelBase.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ext" />
-    <Folder Include="Formats" />
-    <Folder Include="Forms" />
-    <Folder Include="Generators" />
-    <Folder Include="Include\Core" />
-    <Folder Include="Include\Interop" />
-    <Folder Include="Include\Extended" />
-    <Folder Include="Midi" />
-    <Folder Include="Interop" />
-    <Folder Include="Midi\IO" />
-    <Folder Include="Midi\Common" />
-    <Folder Include="Core" />
-    <Folder Include="Wave" />
-    <Folder Include="Documents" />
-    <Folder Include="Modules" />
-    <Folder Include="System.Sound" />
-    <Folder Include="Pcm" />
-    <Folder Include="IffForm" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="..\..\Win32-DLL\DrumSynth2Wave\ds2wav.dll">
       <Link>ds2wav.dll</Link>

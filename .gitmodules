@@ -1,0 +1,6 @@
+[submodule "source/cor3.forms"]
+	path = source/cor3.forms
+	url = https://github.com/tfwio/cor3.forms
+[submodule "Source/cor3.core"]
+	path = Source/cor3.core
+	url = https://github.com/tfwio/cor3.core

@@ -16,9 +16,11 @@ Hence the mess.
 
 ### History
 
-This mess of code was at a time used a common-library for my little DOTNET VSTHOST, which I intended on re-writing to resolve two issues I'm aware of: (1) MTC timing resolution needs either an overhaul (repair) or I just need to find and resolve the bug. (2) VST Effect and Instrument UIs have apparent threading issues that makes a VST Host in DOTNET not so useful as a all-purpose mastering suite solution.  Sony (Sonic-Foundary) ACID is a good example of a VST-HOST written predominantly in C and merged with DOTNET where most of the windowing (I can only assume) was done in COM/ATL.  In other words, this library generally became abandoned in CSharp when I realized that I wanted to generally write the application in C.
+This mess of code was at a time used a common-library for my little DOTNET VSTHOST (of which there is a gen.snd.vst-common library), which I intended on re-writing to resolve two issues I'm aware of: (1) MTC timing resolution needs either an overhaul (repair) or I just need to find and resolve the bug. (2) VST Effect and Instrument UIs have apparent threading issues that makes a VST Host in DOTNET not so useful as a all-purpose mastering suite solution.  Sony (Sonic-Foundary) ACID is a good example of a VST-HOST written predominantly in C and merged with DOTNET where most of the windowing (I can only assume) was done in COM/ATL.  In other words, this library generally became abandoned in CSharp when I realized that I wanted to generally write the application in C.
 
 Now I simply want to clean it up and see if perhaps I can use it for a 'sample archive tool / sample editor' or assist in some-such.
+
+See: [vstnet.codeplex.com](http://vstnet.codeplex.com/) for more info on CSharp/VST.
 
 ----
 

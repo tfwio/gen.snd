@@ -11,8 +11,12 @@ Hence the mess.
 
 ### Dependencies
 
+* using MSBUILD 5.0, DOTNET Framework v4.0–v4.5
+* Targeting x86/Win32, while lead development has taken place on a WOW64 machine running WIN7.
 * depends on `cor3.core` and `cor3.forms`, by way of files that are included into this common library.
-* A custom version of NAudio ([naudio.codeplex.com](http://naudio.codeplex.com)) is used here, until I adequately resolve differences between the assembly I'm using and the original(s).  The primary reason I'm using a customized binary here is due to the lack of a signed assembly as distributed by naudio's default nuget package.
+* [naudio.codeplex.com](http://naudio.codeplex.com) — a custom version is used here, until I adequately resolve differences between the assembly I'm using and the original(s).  The primary reason I'm using a customized binary here is due to the lack of a signed assembly as distributed by naudio's default nuget package.
+* See: [vstnet.codeplex.com](http://vstnet.codeplex.com/) for more info on CSharp/VST.
+* Please note that any supplied binaries such as `naudio` and `jacobi.vstnet.interop` binaries were generated on a i686 processer, targeting i386 (win32) for cross-compatibility as this is the only machine used for testing thus far.
 
 ### History
 
@@ -22,9 +26,6 @@ Now I simply want to clean it up and see if perhaps I can use it for a 'sample a
 
 (A mental note)
 The last thing I can remember when feeding the mindspace that generated the vst-host is that I ended up looking at and wanting to compile a JUCE framework apps, and I became quite sidetracked by researching my next step: writing a host in C.  Please note that I didn't expect to get the VSTHOST [`gen.snd.vstsmfui`](https://github.com/tfwio/gen.snd.vstsmfui) up here so quickly.  I'll be documenting it when I've got time...
-
-See: [vstnet.codeplex.com](http://vstnet.codeplex.com/) for more info on CSharp/VST.
-
 
 ----
 

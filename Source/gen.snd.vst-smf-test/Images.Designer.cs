@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace System {
+namespace modest100 {
 	using System;
 	
 	
@@ -22,14 +22,14 @@ namespace System {
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
 	[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
 	[global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-	internal class Strings {
+	internal class Images {
 		
 		private static global::System.Resources.ResourceManager resourceMan;
 		
 		private static global::System.Globalization.CultureInfo resourceCulture;
 		
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-		internal Strings() {
+		internal Images() {
 		}
 		
 		/// <summary>
@@ -39,7 +39,7 @@ namespace System {
 		internal static global::System.Resources.ResourceManager ResourceManager {
 			get {
 				if (object.ReferenceEquals(resourceMan, null)) {
-					global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("gen.snd.Strings", typeof(Strings).Assembly);
+					global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("modest100.Images", typeof(Images).Assembly);
 					resourceMan = temp;
 				}
 				return resourceMan;
@@ -61,79 +61,92 @@ namespace System {
 		}
 		
 		/// <summary>
-		///   Looks up a localized string similar to Argument ‘{0}’ as allready been added to the Dictionary..
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
 		/// </summary>
-		internal static string DictionaryList_ErrorMessage {
+		internal static System.Drawing.Bitmap button {
 			get {
-				return ResourceManager.GetString("DictionaryList_ErrorMessage", resourceCulture);
+				object obj = ResourceManager.GetObject("button", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
 			}
 		}
 		
 		/// <summary>
-		///   Looks up a localized string similar to DictionaryList Usage Error.
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
 		/// </summary>
-		internal static string DictionaryList_ErrorMessage_Title {
+		internal static System.Drawing.Bitmap Common {
 			get {
-				return ResourceManager.GetString("DictionaryList_ErrorMessage_Title", resourceCulture);
+				object obj = ResourceManager.GetObject("Common", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
 			}
 		}
 		
 		/// <summary>
-		///   Looks up a localized string similar to MTrk {0}.
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
 		/// </summary>
-		internal static string Filter_MidiTrack {
+		internal static System.Drawing.Bitmap lilbtn {
 			get {
-				return ResourceManager.GetString("Filter_MidiTrack", resourceCulture);
+				object obj = ResourceManager.GetObject("lilbtn", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
 			}
 		}
 		
 		/// <summary>
-		///   Looks up a localized string similar to {0:00}:{1:00}:{2:00}.
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
 		/// </summary>
-		internal static string ms_mbq {
+		internal static System.Drawing.Bitmap progress_back {
 			get {
-				return ResourceManager.GetString("ms_mbq", resourceCulture);
+				object obj = ResourceManager.GetObject("progress_back", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
 			}
 		}
 		
 		/// <summary>
-		///   Looks up a localized string similar to {0:00}:{1:00}:{3:00}:{2:000}.
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
 		/// </summary>
-		internal static string ms_mbqt {
+		internal static System.Drawing.Bitmap progress_fore {
 			get {
-				return ResourceManager.GetString("ms_mbqt", resourceCulture);
+				object obj = ResourceManager.GetObject("progress_fore", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
 			}
 		}
 		
 		/// <summary>
-		///   Looks up a localized string similar to {0:00}:{1:00}:{2:000}.
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
 		/// </summary>
-		internal static string ms_mbt {
+		internal static System.Drawing.Bitmap resrc_btn {
 			get {
-				return ResourceManager.GetString("ms_mbt", resourceCulture);
+				object obj = ResourceManager.GetObject("resrc_btn", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
 			}
 		}
 		
 		/// <summary>
-		///   Looks up a localized string similar to 
-		///&lt;div class=&apos;xpopup&apos;&gt;
-		///
-		///	&lt;span style=&apos;float:right&apos;&gt;&lt;input pickupid=&apos;{Pickup_ID}&apos; type=&apos;button&apos; value=&apos;edit&apos; id=&apos;editbutton&apos; /&gt;&lt;/span&gt;
-		///	
-		///	&lt;div class=&apos;addr&apos; style=&apos;float:left&apos;&gt;
-		///		&lt;font size=&apos;4&apos;&gt;&lt;b&gt;{Pickup_Name}&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;
-		///		&lt;font size=&apos;1&apos;&gt;{addrStreet} {addrSuite}&lt;br /&gt;
-		///		{addrCity} {addrState} {addrZip}&lt;/font&gt;
-		///    &lt;/div&gt;
-		///    
-		///    &lt;div class=&apos;phone&apos; style=&apos;float:left;&apos;&gt;
-		///		&lt;table style=&apos;border-collapse: collapse; min-width:120px;&apos;&gt;
-		///			&lt;tr&gt;&lt;td&gt;{Phone_1}&lt;/td&gt;&lt;/tr&gt;
-		///			&lt;tr&gt;&lt;td&gt;{Phone_2}&lt;/td&gt;&lt;/tr&gt; [rest of string was truncated]&quot;;.
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
 		/// </summary>
-		internal static string TestRow_Value {
+		internal static System.Drawing.Bitmap scrollbar {
 			get {
-				return ResourceManager.GetString("TestRow:Value", resourceCulture);
+				object obj = ResourceManager.GetObject("scrollbar", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap Search {
+			get {
+				object obj = ResourceManager.GetObject("Search", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap TabButton {
+			get {
+				object obj = ResourceManager.GetObject("TabButton", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
 			}
 		}
 	}

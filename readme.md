@@ -30,14 +30,9 @@ See: [vstnet.codeplex.com](http://vstnet.codeplex.com/) for more info on CSharp/
 
 More notes to come later...
 
-LICENSE
--------------------
-
-Copyright (C) 2000-2014 github.com/tfwio
-
 ### The MIT License (MIT)
 
-Copyright (c) 2000-2014 TFW
+Copyright (C) 2000-2014 github.com/tfwio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

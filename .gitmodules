@@ -1,20 +1,15 @@
 [submodule "source/cor3.forms"]
 	path = Source/cor3.forms
 	url = https://github.com/tfwio/cor3.forms
-	branch = master
 [submodule "Source/cor3.core"]
 	path = Source/cor3.core
 	url = https://github.com/tfwio/cor3.core
-	branch = master
 [submodule "Source/gen.snd.common"]
 	path = Source/gen.snd.common
 	url = https://github.com/tfwio/gen.snd.common
-	branch = master
 [submodule "Source/gen.snd.vst"]
 	path = Source/gen.snd.vst
 	url = https://github.com/tfwio/gen.snd.vst
-	branch = master
 [submodule "Source/gen.snd.vstsmfui"]
 	path = Source/gen.snd.vstsmfui
 	url = https://github.com/tfwio/gen.snd.vstsmfui
-	branch = master

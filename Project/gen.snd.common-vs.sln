@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Cor3-Net40", "..\sou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gen.snd.vst", "..\Source\gen.snd.vst\gen.snd.vst.csproj", "{3AE94169-B621-4352-9661-E5B293083C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gen.snd.vst-smf-test", "..\Source\gen.snd.vstsmfui\gen.snd.vst-smf-test.csproj", "{F8A9D892-7F27-4501-8DDF-4970674477DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gen.snd.vstsmfui", "..\Source\gen.snd.vstsmfui\gen.snd.vstsmfui.csproj", "{F8A9D892-7F27-4501-8DDF-4970674477DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

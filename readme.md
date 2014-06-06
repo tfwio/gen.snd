@@ -1,13 +1,13 @@
-## general / common sound library
+## general / common csharp sound library
 
-just a meager, preemp general sound library – mostly serving as a self-education in general digital audio
+just the meager general sound library – mostly serving as a self-education in general digital audio
 
-a set of a couple parser modules for midi, soundfont, impulse-tracker and other stuff.
+a set of a couple parser modules for midi, soundfont, impulse-tracker and other stuff—including a vst-host prototype that can use some work.
 
 ### About
 
 The idea of most any parser here is almost strictly for interpretation of a few media formats.  If anything, I was interested in writing a sample-import/export librarian tool, however many of the components were first authored in VB6, and as my understanding evolved, this project migrated first to C/CPP, then DOTNETv1.0—then finally, years later: DOTNETv4.x;
-Hence the mess.
+Hence the mess.  Now, it would be nice to write a vst-host in C/CPP when I have time and perhaps rewrite the genericwav thing to WPF.
 
 ### Dependencies
 
@@ -35,21 +35,9 @@ More notes to come later...
 
 Copyright (C) 2000-2014 github.com/tfwio
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 

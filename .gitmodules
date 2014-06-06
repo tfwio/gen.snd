@@ -13,3 +13,6 @@
 [submodule "Source/gen.snd.vstsmfui"]
 	path = Source/gen.snd.vstsmfui
 	url = https://github.com/tfwio/gen.snd.vstsmfui
+[submodule "Source/cor3.fx"]
+	path = Source/cor3.fx
+	url = https://github.com/tfwio/cor3.fx

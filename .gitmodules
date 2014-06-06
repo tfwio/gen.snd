@@ -16,3 +16,6 @@
 [submodule "Source/cor3.fx"]
 	path = Source/cor3.fx
 	url = https://github.com/tfwio/cor3.fx
+[submodule "Source/cor3.win"]
+	path = Source/cor3.win
+	url = https://github.com/tfwio/cor3.win

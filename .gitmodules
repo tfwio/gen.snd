@@ -19,3 +19,6 @@
 [submodule "Source/cor3.win"]
 	path = Source/cor3.win
 	url = https://github.com/tfwio/cor3.win
+[submodule "Source/gen.snd.par"]
+	path = Source/gen.snd.par
+	url = https://github.com/tfwio/gen.snd.par

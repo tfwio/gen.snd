@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio 2012
+# SharpDevelop 5.0
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cor3", "cor3", "{EB841CAE-6EF4-4668-907E-53A882CE2847}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows.CommonControls.Interop", "..\Source\cor3.win\Windows.CommonControls.Interop.csproj", "{0C6AC21B-D2DB-439C-85DE-A8F116EE7437}"

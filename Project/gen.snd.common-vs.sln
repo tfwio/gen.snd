@@ -18,8 +18,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gen.snd.vst", "..\Source\ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "genericwav", "..\Source\gen.snd.par\genericwav.csproj", "{73D0FED9-101D-4C98-B725-B107AB468A3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "generic", "generic\generic.csproj", "{43BCDD11-D513-42A0-A655-17101B041A49}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,10 +42,6 @@ Global
 		{73D0FED9-101D-4C98-B725-B107AB468A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73D0FED9-101D-4C98-B725-B107AB468A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73D0FED9-101D-4C98-B725-B107AB468A3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43BCDD11-D513-42A0-A655-17101B041A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43BCDD11-D513-42A0-A655-17101B041A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43BCDD11-D513-42A0-A655-17101B041A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43BCDD11-D513-42A0-A655-17101B041A49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -76,7 +76,7 @@ namespace AvUtil.Core
 
 		public List<FloatPoint> GetInt16(int width, int chanels, params byte[] buffer)
 		{
-			throw NotImplementedException();
+			throw new NotImplementedException();
 		}
 
 		public AggrigationCalculator(WaveFormat info, long waveLength)

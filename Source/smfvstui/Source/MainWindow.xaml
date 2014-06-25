@@ -1,0 +1,20 @@
+﻿<mui:ModernWindow x:Class="smfvstui.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+	xmlns:v="clr-namespace:smfvstui.Views"
+	IsTitleVisible="True"
+	Title="Main Window">
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup x:Name="mainLinks" DisplayName="Generator"></mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+
+    <mui:ModernWindow.TitleLinks><mui:Link DisplayName="main" Source="/main" />
+        <mui:Link DisplayName="colour" Source="/source/views/settings.xaml" />
+        <!--<mui:Link DisplayName="gen[template]" Source="/generator/template" />
+		<mui:Link DisplayName="gen[database]" Source="/generator/data" />-->
+    </mui:ModernWindow.TitleLinks>
+    <mui:ModernWindow.ContentLoader>
+        <v:UiContentLoader x:Name="myLoader" />
+    </mui:ModernWindow.ContentLoader>
+</mui:ModernWindow>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ititoo</RootNamespace>
+    <AssemblyName>itik</AssemblyName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1311E82A-6407-494B-A9BA-BDBE947A3C17}</ProjectGuid>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>True</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\cor3.core\Internals\ViewPoint.cs">
+      <Link>Include\Internals\ViewPoint.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\cor3.core\System.Windows.Forms\SplashForm.cs">
+      <Link>Include\Core\SplashForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cor3.core\System\ControlUtil.cs">
+      <Link>Include\Core\ControlUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\DoubleMathExtension.cs">
+      <Link>Include\Core\DoubleMathExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\EnumExtension.cs">
+      <Link>Include\Core\EnumExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\Serial.cs">
+      <Link>Include\Core\Serial.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\System.DialogUtil.cs">
+      <Link>Include\Core\System.DialogUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\WTF.cs">
+      <Link>Include\Core\WTF.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.forms\Forms\ToolStrip\ToolStripUpDown.cs">
+      <Link>Include\Core\ToolStripUpDown.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="app.cs" />
+    <Compile Include="ItiRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gen.snd.common\gen.snd.common.csproj">
+      <Project>{669c9cd9-8b80-4d6d-b5d7-a39b1224a50e}</Project>
+      <Name>gen.snd.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

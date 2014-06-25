@@ -1281,6 +1281,7 @@
     <None Include="..\..\..\..\CS_Mercurial\naudio\NAudioDemo\MediaFoundationDemo\WasapiOutGuiThread.cs">
       <Link>Source\Includes\WasapiOutGuiThread.cs</Link>
     </None>
+    <Compile Include="Source\Core\AggrigationCalculator.cs" />
     <Compile Include="Source\Core\AVCoreSettings.cs">
       <DependentUpon>AVCoreModel.cs</DependentUpon>
     </Compile>

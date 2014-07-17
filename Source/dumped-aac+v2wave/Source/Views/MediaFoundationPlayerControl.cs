@@ -90,6 +90,7 @@ namespace AvUtil.Views
 				long pos = player.GetPosition();
 				player.BrowseFile(true);
 				player.SetPosition(pos);
+				ReportProgress();
 				//                btnPlay.PerformClick();
 			};
 			// LOAD
@@ -145,6 +146,41 @@ namespace AvUtil.Views
 			trackBar1.Value = player.TimeStatusInt;
 			labelPosition.Text = player.TimeStatusStringShort;
 			//            label3.Text = player.TimeStatusStringLong;
+		}
+		void LabelPositionDoubleClick(object sender, EventArgs e)
+		{
+			PositionShow();
+		}
+		void PositionShow()
+		{
+			textBoxPosition.Location = labelPosition.Location;
+			textBoxPosition.Width = labelPosition.Width;
+			textBoxPosition.Visible = true;
+			textBoxPosition.Text = player.TimeStatusString;
+			textBoxPosition.SelectAll();
+			textBoxPosition.Focus();
+		}
+		void PositionApply()
+		{
+			textBoxPosition.Visible = false;
+			var t = TimeFormat.Parse(textBoxPosition.Text);
+			player.CurrentTime = new TimeSpan(0,t.Hour,t.Minute,t.Second,t.Mill);
+		}
+		void TextBoxPositionLeave(object sender, EventArgs e)
+		{
+			textBoxPosition.Visible = false;
+		}
+		void TextBoxPositionKeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode==Keys.Enter)
+			{
+				PositionApply();
+				e.Handled = true;
+			}
+			else if(e.KeyCode==Keys.Escape)
+			{
+				textBoxPosition.Visible = false;
+			}
 		}
 	}
 }

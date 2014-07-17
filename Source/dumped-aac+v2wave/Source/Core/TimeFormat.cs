@@ -25,6 +25,10 @@ namespace AvUtil.Core
 		public const long perHour		=  3600000000;
 		public const long perDay		= 86400000000;
 		
+		/// <summary>
+		/// returns a long.  This is the same as using a (long) operator eg: 
+		/// <para><tt>long val = (long)me</tt></para>
+		/// </summary>
 		public long Milliseconds { get; set; } // 1000 = 1 second
 		
 //		return string.Format("{0:00}:{1:00}:{2:00}.{3:000}",Remainder(TimePart.Hour),Remainder(TimePart.Minute),Remainder(TimePart.Second),Remainder(TimePart.Thousanth))
@@ -198,11 +202,11 @@ namespace AvUtil.Core
 					break;
 			}
 			TimeFormat data = new TimeFormat(
-				Convert.ToInt32(mc.Groups["dd"].Value==null?  "00" : mc.Groups["dd"].Value),
-				Convert.ToInt32(mc.Groups["hh"].Value==null?  "00" : mc.Groups["hh"].Value),
-				Convert.ToInt32(mc.Groups["mm"].Value==null?  "00" : mc.Groups["mm"].Value),
-				Convert.ToInt32(mc.Groups["ss"].Value==null?  "00" : mc.Groups["ss"].Value),
-				Convert.ToInt32(mc.Groups["ttt"].Value==null? "00" : mc.Groups["ttt"].Value)
+				Convert.ToInt32(string.IsNullOrEmpty(mc.Groups["dd"].Value) ?  "00" : mc.Groups["dd"].Value),
+				Convert.ToInt32(string.IsNullOrEmpty(mc.Groups["hh"].Value) ?  "00" : mc.Groups["hh"].Value),
+				Convert.ToInt32(string.IsNullOrEmpty(mc.Groups["mm"].Value) ?  "00" : mc.Groups["mm"].Value),
+				Convert.ToInt32(string.IsNullOrEmpty(mc.Groups["ss"].Value) ?  "00" : mc.Groups["ss"].Value),
+				Convert.ToInt32(string.IsNullOrEmpty(mc.Groups["ttt"].Value)? "00" : mc.Groups["ttt"].Value)
 			);
 			mc = null;
 			return data;

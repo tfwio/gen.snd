@@ -46,6 +46,7 @@ namespace AvUtil.Views
         	this.btnLoad = new System.Windows.Forms.Button();
         	this.labelPosition = new System.Windows.Forms.Label();
         	this.timer1 = new System.Windows.Forms.Timer(this.components);
+        	this.textBoxPosition = new System.Windows.Forms.TextBox();
         	((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
         	this.SuspendLayout();
         	// 
@@ -127,15 +128,31 @@ namespace AvUtil.Views
         	this.labelPosition.Name = "labelPosition";
         	this.labelPosition.Size = new System.Drawing.Size(224, 24);
         	this.labelPosition.TabIndex = 4;
-        	this.labelPosition.Text = "00:00:00.000";
+        	this.labelPosition.Text = "00:00:00";
         	this.labelPosition.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+        	this.labelPosition.DoubleClick += new System.EventHandler(this.LabelPositionDoubleClick);
         	// 
-        	// MediaFoundationControl_Orig
+        	// textBoxPosition
+        	// 
+        	this.textBoxPosition.BorderStyle = System.Windows.Forms.BorderStyle.None;
+        	this.textBoxPosition.Font = new System.Drawing.Font("Segoe Condensed", 18F, System.Drawing.FontStyle.Bold);
+        	this.textBoxPosition.Location = new System.Drawing.Point(19, 10);
+        	this.textBoxPosition.Margin = new System.Windows.Forms.Padding(0);
+        	this.textBoxPosition.Name = "textBoxPosition";
+        	this.textBoxPosition.Size = new System.Drawing.Size(189, 28);
+        	this.textBoxPosition.TabIndex = 12;
+        	this.textBoxPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+        	this.textBoxPosition.Visible = false;
+        	this.textBoxPosition.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxPositionKeyDown);
+        	this.textBoxPosition.Leave += new System.EventHandler(this.TextBoxPositionLeave);
+        	// 
+        	// MediaFoundationPlayerControl
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
         	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         	this.AutoSize = true;
         	this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        	this.Controls.Add(this.textBoxPosition);
         	this.Controls.Add(this.btnLoadSoft);
         	this.Controls.Add(this.btnPROFILES);
         	this.Controls.Add(this.trackBar1);
@@ -145,12 +162,14 @@ namespace AvUtil.Views
         	this.Controls.Add(this.btnLoad);
         	this.Controls.Add(this.btnPlay);
         	this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-        	this.Name = "MediaFoundationControl_Orig";
+        	this.Name = "MediaFoundationPlayerControl";
         	this.Size = new System.Drawing.Size(675, 51);
         	((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
         	this.ResumeLayout(false);
+        	this.PerformLayout();
 
         }
+        private System.Windows.Forms.TextBox textBoxPosition;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelPosition;
         private System.Windows.Forms.Button btnLoad;

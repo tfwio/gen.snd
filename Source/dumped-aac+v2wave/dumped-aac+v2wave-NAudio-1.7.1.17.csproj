@@ -4,7 +4,7 @@
     <ProjectGuid>{58695F62-46BD-436D-A904-1F6A5B6DA308}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>AvUtil</RootNamespace>
     <AssemblyName>dumped-aac+v2wave</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

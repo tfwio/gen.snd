@@ -88,6 +88,14 @@ namespace AvUtil.Core
 		public bool HasFile { get { return ofd.FileNames.Length != 0 && File.Exists(ofd.FileNames[0]);  } }
 		#endregion
 		
+		public TimeSpan CurrentTime {
+			get { return reader.CurrentTime; }
+			set { reader.CurrentTime = value; }
+		}
+		
+		public int SampleBits { get { return reader.WaveFormat.BitsPerSample; } }
+		public int SampleRate { get { return reader.WaveFormat.SampleRate; } }
+		
 		public MinMaxValue TimeValue {
 			get { return _TimeValue; }
 			set { _TimeValue = value; }
@@ -112,12 +120,17 @@ namespace AvUtil.Core
 		}
 		
 		#region TimeStatus (TimeStatusInt, TimeStatusStringShort, TimeStatusStringLong, TimeStatus)
+		public int GetTimeStatusInt(long position)
+		{
+			return Math.Min( (int)((TimeValue.Maximum*position)/reader.Length), TimeValue.Maximum );
+		}
+		
 		/// <summary>
 		/// Applied to a TrackBar (seek-bar).
 		/// </summary>
 		public int TimeStatusInt {
 			get {
-				return TimeValue.Value = Math.Min( (int)((TimeValue.Maximum*reader.Position)/reader.Length), TimeValue.Maximum );
+				return TimeValue.Value = GetTimeStatusInt(reader.Position);
 			}
 		}
 		/// <summary>
@@ -136,6 +149,19 @@ namespace AvUtil.Core
 					total.ToString(TimeFormatString.HMS )
 				);
 				return EmptyTime;
+			}
+		}
+		/// <summary>
+		/// gets H:M.S format (TimeFormatString.HMS)
+		/// </summary>
+		public string TimeStatusString {
+			get
+			{
+				if (reader==null) return "00:00:00";
+				TimeFormat current = new TimeFormat(0,0,0,reader.CurrentTime.TotalSeconds,0);
+//				total = new TimeFormat(0,0,0,reader.TotalTime.TotalSeconds,0);
+				if (!IsUrlMedia) return string.Format("{0}", current.ToString(TimeFormatString.HMS));
+				else return "00:00:00";
 			}
 		}
 		
@@ -168,10 +194,14 @@ namespace AvUtil.Core
 				reader = null;
 			}
 		}
+		public long ReaderLength { get { return reader.Length; } }
 		
 		public void SetVolume(float value) { try { wavePlayer.Volume = value; } catch { } }
 		public long GetPosition() { return reader.Position; }
 		public long SetPosition(long value) { return reader.Seek(value,SeekOrigin.Begin); }
+//		public long SetPosition(TimeFormat value) {
+//			return reader.Seek(value,SeekOrigin.Begin);
+//		}
 		
 		/// <summary>
 		/// This is generally a setter for <tt>TimeValue.Value</tt>.
@@ -183,10 +213,8 @@ namespace AvUtil.Core
 			// TimeValue.Maximum = value.Maximum;
 			// TimeValue.Value = ScrollHelper(reader.Length);
 			// long rv = ;
-			if (HasReader) reader.Position = (value*reader.Length)/TimeValue.Maximum;;
+			if (HasReader) reader.Position = (value*ReaderLength)/TimeValue.Maximum;;
 			// Debug.Print("local value: {0}, Tick: {1}, TimeValue: {2}, {3}:{4}:{5} (vminmax)",value, rv, TimeValue.Value, TimeValue.Minimum, TimeValue.Maximum);
-			
-			
 		}
 		
 		/// <summary>

@@ -1,0 +1,13 @@
+﻿<mui:ModernDialog x:Class="genericwav.Views.MainDialog" xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:n="clr-namespace:genericwav.Views"
+	Title="genericwav" ResizeMode="CanResizeWithGrip" MaxHeight="9000" MaxWidth="9000" WindowStartupLocation="CenterScreen" ShowInTaskbar="True">
+	<mui:ModernDialog.Content>
+		
+		<Grid>
+			<n:Main />
+		</Grid>
+	</mui:ModernDialog.Content>
+
+</mui:ModernDialog>

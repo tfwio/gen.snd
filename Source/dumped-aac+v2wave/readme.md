@@ -24,3 +24,4 @@ BUILDING
 * Open the CSharp-Project file [dumped-aac+v2wave-NAudio-1.7.1.17.csproj](https://github.com/tfwio/gen.snd/blob/master/Source/dumped-aac%2Bv2wave/dumped-aac%2Bv2wave-NAudio-1.7.1.17.csproj#L24) and change the Property->NAudioPath to point to NAudio's top-level directory.
   This directory contains the NAudio.dll project `.\naudio\naudio*.csproj`.
   if the files don't become available/working in your IDE, apparently you did something wrong.
+* build via the IDE

@@ -5,8 +5,8 @@ This is a old app framework that was stripped to prototype something that I coul
 collect sample-data from seemingly arbitrary input using NAudio's MediaFoundation implementation.
 
 - You can download this from google-drive
-- [here](https://drive.google.com/file/d/0B3zU6tYfj4ZHYWZmUUpiVC1jdms/view?usp=sharing) (newer source-distro, NAudio sources are included)
-- [here](https://drive.google.com/file/d/0B3zU6tYfj4ZHeTNvNEROS0VReGM/edit?usp=sharing) (without NAudio dependencies)
+    - [here](https://drive.google.com/file/d/0B3zU6tYfj4ZHYWZmUUpiVC1jdms/view?usp=sharing) (newer source-distro, NAudio sources are included)
+    - [here](https://drive.google.com/file/d/0B3zU6tYfj4ZHeTNvNEROS0VReGM/edit?usp=sharing) (without NAudio dependencies)
 
 Demonstrated
 ---------------------------------------

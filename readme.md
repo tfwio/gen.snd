@@ -1,3 +1,38 @@
+> ¡¡¡THIS SPACE IS VERY MUCH A OBSOLETE WASTE OF TIME!!! –let alone a dependency nightmare.
+> 
+> anything that was generally useful here has been migrated to  
+> https://github.com/tfwio/modest-smf-vstnet (just a shoddy prototype / litmus test)
+>
+> https://github.com/tfwio/smfio  
+> [the MIDI parser shown in here has been worked up to usable status, recently ;)]
+> 
+> there is plenty of good stuff out there...
+>
+> VlademarOrn's (csharp VA modeling *— highly recommended*)
+> - http://valdemarorn.github.io/Projects.html
+> - https://github.com/ValdemarOrn
+> - → https://github.com/ValdemarOrn/SharpSoundPlugins
+> - https://github.com/ValdemarOrn/CloudSeed
+> 
+> fluidsynth C# binding [SoundFont (fluidsynth.dll) player]
+> - https://github.com/atsushieno/nfluidsynth
+> - https://github.com/atsushieno/managed-midi
+> - https://github.com/FluidSynth/fluidsynth [dependency for nfluidsynth, though you can just go find binaries]
+>
+> https://github.com/naudio/NAudio (you know)
+> 
+> https://github.com/nparkanyi/MiniMIDI and https://github.com/nparkanyi/libmidi  
+> "Lightweight MIDI player and editor."  (C/CPP Cross-Platform FLTK + (libmidi) MIDI player/viewer demo in c/c++)
+> 
+> Laurent de Soras (Productions)  
+> http://ldesoras.free.fr/prod.html
+> 
+> https://github.com/olilarkin/awesome-musicdsp
+>
+> ...
+
+
+
 ## general / common csharp sound library
 
 just the meager general sound library – mostly serving as a self-education in general digital audio
